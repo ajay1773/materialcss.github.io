@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Materialize CSS</title>
+       <style>
+              .box{
+                     height: 200px;
+              }
+              nav .badge{
+                     position: relative;
+                     top: 15px;
+                     right: 30px;
+              }
+              .row{
+                     margin-top: 40px;
+              }
+              header{
+                     background: url(./BRDG.jpg);
+                     background-position: center;
+                     background-size: cover;
+                     min-height: 800px;
+              
+              }
+              
+              @media only screen and (max-width: 670px) {
+                     header{
+                            min-height:450px;
+                     }
+              }
+       </style>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+       
+</head>
+<body>
+      <header>
+       <nav class="nav-wrapper transparent z-depth-0 black-text">
+              <div class="container">
+              <a href="#" style="font-size: 30px;">Site Title</a>
+              <a href="#" class="sidenav-trigger right" data-target="mobile-links">
+                     <i class="material-icons">menu</i>
+              </a>
+     <ul class="right hide-on-med-and-down">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="btn-floating teal z-depth-0">
+                   <i class="material-icons">local_grocery_store</i>
+            </a></li>
+            <li><span class="badge red white-text new">5</span></li>
+     </ul>
+     </div>
+     </nav>
+     <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Cart<span class="badge red white-text new">5</span></a></li>    
+        
+     </ul>
+</header> 
+     <section class="container scrollspy" id="work">
+            <div class="row">
+                   <div class="col s12 l4 ">
+                     <img src="./GLSATBEACH.jpg" alt="blah" class="responsive-img modelboxes">
+                   </div>
+                   <div class="col s12 l6 offset-l1">
+                     <h3>Beach and sun</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ex iure perferendis. Non enim laborum nihil voluptate aspernatur, temporibus ipsam, harum iure rem modi unde, assumenda explicabo libero eius repellat!</p>
+                   </div>
+            </div>
+            <div class="row">
+                   <div class="col s12 l4 push-l7 ">
+                     <img src="./BRDG.jpg" alt="blah" class="responsive-img modelboxes">
+                   </div>
+                   <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                     <h3>In the Sky</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ex iure perferendis. Non enim laborum nihil voluptate aspernatur, temporibus ipsam, harum iure rem modi unde, assumenda explicabo libero eius repellat!</p>
+                   </div>
+            </div>
+            <div class="row">
+                   <div class="col s12 l4 ">
+                     <img src="./WRK&DREAM.jpg" alt="blah" class="responsive-img modelboxes">
+                   </div>
+                   <div class="col s12 l6 offset-l1">
+                     <h3>Work Hard to achieve </h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ex iure perferendis. Non enim laborum nihil voluptate aspernatur, temporibus ipsam, harum iure rem modi unde, assumenda explicabo libero eius repellat!</p>
+                   </div>
+            </div>
+     </section>
+     <div class="parallax-container">
+            <div class="parallax">
+                   <img src="luke-pamer-ILnBrcYVXr4-unsplash.jpg" alt="" class="responsive-img">
+            </div>
+     </div>
+     <section class="container scrollspy" id="services">
+          <div class="row" style="margin:80px 0px">
+                 <div class="col s12 l4">
+                        <h3>Skills of mine.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus officia, perspiciatis illo consectetur laboriosam qui laborum optio veritatis mollitia cumque molestiae molestias necessitatibus perferendis possimus dolores soluta. Aperiam, corporis voluptatum.</p>
+                 </div>
+                 <div class="col s12 l6 offset-l2">
+                        <ul class="tabs">
+                               <li class="tab col s-4"><a href="#frontend" class="flow-text teal-text ">Frontend</a></li>
+                               <li class="tab col s-4"><a href="#backend" class="flow-text teal-text ">Backend</a></li>
+                               <li class="tab col s-4"><a href="#gaming" class="flow-text teal-text ">Gaming</a></li>
+                        </ul>
+                        <div class="col s12" id="frontend">
+                               <p class="flow-text">Frontend</p>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolores error amet recusandae dolor vitae laudantium aliquid illo sit, explicabo quasi placeat porro officia doloribus eaque, dicta nesciunt voluptatibus perferendis.</p>
+                        </div>
+                        <div class="col s12" id="backend">
+                               <p class="flow-text">Backend</p>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolores error amet recusandae dolor vitae laudantium aliquid illo sit, explicabo quasi placeat porro officia doloribus eaque, dicta nesciunt voluptatibus perferendis.</p>
+                        </div>
+                        <div class="col s12" id="gaming">
+                               <p class="flow-text">Gaming</p>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolores error amet recusandae dolor vitae laudantium aliquid illo sit, explicabo quasi placeat porro officia doloribus eaque, dicta nesciunt voluptatibus perferendis.</p>
+                        </div>
+                 </div>
+          </div> 
+     </section>
+     <div class="parallax-container">
+            <div class="parallax">
+                   <img src="neven-krcmarek-3ym-ev0Pe58-unsplash.jpg" alt="" class="responsive-img">
+            </div>
+     </div>
+     <div class="container">
+            <section class="container scrollspy" id="contact">
+                   <div class="row">
+                          <div class="col s12 l5">
+                                 <h3>Contact Us!</h3>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni qui itaque nesciunt veritatis velit illo delectus ipsum necessitatibus sed culpa, animi fugit sapiente natus, assumenda reiciendis excepturi, minima quod quas.</p>
+                          </div>
+                          <div class="col s12 l5 offset-l2">
+                                 <form>
+                                        <div class="input-field">
+                                               <i class="material-icons prefix">email</i>
+                                               <input type="text"  id="email">
+                                               <label for="email">Your Email</label>
+                                        </div>
+                                        <div class="input-field">
+                                               <i class="material-icons prefix">account_circle</i>
+                                               <input type="text"  id="name">
+                                               <label for="name">Your Name</label>
+                                        </div>
+                                        <div class="input-field">
+                                               <i class="material-icons prefix">vpn_key</i>
+                                               <input type="text"  id="password">
+                                               <label for="password">Password</label>
+                                        </div>
+                                        <div class="input-field">
+                                               <i class="material-icons prefix">event_avalible</i>
+                                               <input type="text" class="datepicker"  id="date">
+                                               <label for="date">Pick a date</label>
+                                        </div>
+                                        <div class="input-field">
+                                               <button class="btn waves-effect waves-light" style="width:100%;">Submit</button>
+                                        </div>
+                                 </form>
+                          </div>
+                   </div>
+            </section>
+     </div>
+     <footer class="page-footer grey darken-3">
+            <div class="container">
+                   <div class="row">
+                          <div class="col s12 l5">
+                                 <h3>About Me</h3>
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum cumque quo aperiam ullam dolore doloremque error modi, numquam magni, ad tempora fugiat quibusdam? Odio, tempora temporibus doloremque cupiditate quasi autem?</p>
+                          </div>
+                          <div class="col s12 l5 offset-l2">
+                                 <h3>Contact Me</h3>
+                                 <ul>
+                                        <li><a href="#" class="white-text">Facebook</a></li>
+                                        <li><a href="#" class="white-text">Instagram</a></li>
+                                        <li><a href="#" class="white-text">Twitter</a></li>
+                                        <li><a href="#" class="white-text">Github</a></li>
+                                 </ul>
+                          </div>
+                   </div>
+              </div>
+              <div class="footer-copyright grey darken-4">
+                     <div class="container center-align ">&copy;2021 Whatever You Want</div>
+              </div>
+     </footer>
+     
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+            $(document).ready(function() {
+                 $('.sidenav').sidenav();
+                  $('.modelboxes').materialbox();
+                  $('.parallax').parallax();
+                  $('.tabs').tabs();
+                  $('.datepicker').datepicker({});
+                  $('.scrollspy').scrollSpy();
+            })
+     </script>
+</body>
+</html>
